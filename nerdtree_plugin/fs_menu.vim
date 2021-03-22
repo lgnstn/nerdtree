@@ -49,10 +49,6 @@ else
     call NERDTreeAddMenuItem({'text': '(l)ist the current node', 'shortcut': 'l', 'callback': 'NERDTreeListNodeWin32'})
 endif
 
-if exists('*system')
-    call NERDTreeAddMenuItem({'text': 'Run (s)ystem command in this directory', 'shortcut':'s', 'callback': 'NERDTreeSystemCommand'})
-endif
-
 "FUNCTION: s:inputPrompt(action){{{1
 "returns the string that should be prompted to the user for the given action
 "
